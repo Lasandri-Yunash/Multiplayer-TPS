@@ -5,14 +5,28 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     InputManager inputManager;
+    AnimatorManager animatorManager;
     Vector3 moveDirection;
     Transform cameragameObject;
 
+    playerManager playerManager;
+
     Rigidbody playerRigidbody;
+
+
+    [Header("Faling and Landing")]
+    public float inAirTimer;
+    public float leapingVelocity;
+    public float fallingVelocity;
+    public float rayCastHeightOffset = 0.5f;
+    public LayerMask groundLayer;
+
 
     [Header("Movement flags")]
     public bool isMoving;
     public bool isSprinting;
+    public bool isGrounded;
+
 
 
     [Header("Movement value")]
@@ -28,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
         inputManager = GetComponent<InputManager>();
         playerRigidbody = GetComponent<Rigidbody>();
         cameragameObject = Camera.main.transform;
+        playerManager = GetComponent<playerManager>();
+        animatorManager = GetComponent<AnimatorManager>();
     }
 
     void HandleMovement()
@@ -86,7 +102,56 @@ public class PlayerMovement : MonoBehaviour
 
     public void HandleAllMovements()
     {
+        HandleFallingAndLanding();
+        if (playerManager.isInteracting)
+            return;
         HandleMovement();
         HandleRotation();
     }
+
+    void HandleFallingAndLanding()
+    {
+        RaycastHit hit;
+        Vector3 raycastOrigin = transform.position;
+        Vector3 targetPosition;
+        raycastOrigin.y = raycastOrigin.y + rayCastHeightOffset;
+        targetPosition = transform.position;
+
+        if (!isGrounded)
+        {
+            Debug.Log("3 ");
+
+            if (!playerManager.isInteracting)
+            {
+                Debug.Log("4 ");
+
+                animatorManager.PlayerTargetAim("Falling", true);
+            }
+
+
+            inAirTimer = inAirTimer + Time.deltaTime;
+            playerRigidbody.AddForce(transform.position * leapingVelocity);
+            playerRigidbody.AddForce(-Vector3.up * fallingVelocity * inAirTimer);
+        
+        }
+
+        if (Physics.SphereCast(raycastOrigin, 0.2f, Vector3.down, out hit, groundLayer))
+        {
+            Debug.Log("1 ");
+            if (!isGrounded && !playerManager.isInteracting)
+            {
+                Debug.Log("2 ");
+
+                animatorManager.PlayerTargetAim("Landing", true);
+
+            }
+
+            Vector3 rayCastHitPoint = hit.point;
+            targetPosition.y = rayCastHitPoint.y;
+            inAirTimer = 0;
+            isGrounded = true;
+        }
+    }
+
+
 }

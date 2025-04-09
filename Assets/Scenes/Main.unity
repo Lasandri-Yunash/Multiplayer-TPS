@@ -282,7 +282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 832575519}
   - component: {fileID: 832575518}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Global Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8911,7 +8911,7 @@ GameObject:
   - component: {fileID: 4989399136757879916}
   - component: {fileID: 4989399136757879917}
   - component: {fileID: 4989399136757879915}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Directional Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9651,7 +9651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5387686896930218422}
   - component: {fileID: 5387686896930218423}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Reflection Probe (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9716,7 +9716,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5387686896958921762}
   - component: {fileID: 5387686896958921761}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Reflection Probe (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9962,7 +9962,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5387686897076202370}
   - component: {fileID: 5387686897076202371}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Reflection Probe (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10027,7 +10027,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5387686897109636914}
   - component: {fileID: 5387686897109636913}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Reflection Probe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14982,7 +14982,7 @@ GameObject:
   - component: {fileID: 5387686897214956978}
   - component: {fileID: 5387686897200847028}
   - component: {fileID: 5387686897200987558}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FogLively
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15395,7 +15395,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5387686897283136304}
   - component: {fileID: 5387686897283136319}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Reflection Probe (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20365,7 +20365,7 @@ GameObject:
   - component: {fileID: 5387686897349846557}
   - component: {fileID: 5387686897335704347}
   - component: {fileID: 5387686897334533641}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FogLively (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20382,7 +20382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5387686897498544762}
   - component: {fileID: 5387686897498544761}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Reflection Probe (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25960,7 +25960,7 @@ GameObject:
   - component: {fileID: 5387686898219845780}
   - component: {fileID: 5387686898200442258}
   - component: {fileID: 5387686898202136704}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FogLively (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26421,7 +26421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5387686898490739949}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Reflection Probe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31316,7 +31316,7 @@ GameObject:
   - component: {fileID: 5387686898628464747}
   - component: {fileID: 5387686898614300013}
   - component: {fileID: 5387686898614421631}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FogLively (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31381,7 +31381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5387686898756823791}
   - component: {fileID: 5387686898756823776}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Reflection Probe (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36401,7 +36401,7 @@ GameObject:
   - component: {fileID: 5387686898920926327}
   - component: {fileID: 5387686898902618481}
   - component: {fileID: 5387686898900923491}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FogLively (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38048,7 +38048,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5180808976598920304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.5, y: 0.1, z: 3.2}
+  m_LocalPosition: {x: 24.82, y: 5.22, z: 0.38}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -38119,8 +38119,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42412b043cc0cc144a23332131e0b142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inAirTimer: 0
+  leapingVelocity: 0.25
+  fallingVelocity: 45
+  rayCastHeightOffset: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 1
   isMoving: 0
   isSprinting: 0
+  isGrounded: 0
   movementSpeed: 2
   rotationSpeed: 13
   sprintingSpeed: 8
@@ -38136,6 +38144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a863c1d3bf2f1b24c924c919ffdf60b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isInteracting: 0
 --- !u!114 &5525423045719963344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45780,7 +45789,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4023776911265893078}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}

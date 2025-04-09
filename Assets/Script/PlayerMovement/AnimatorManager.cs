@@ -76,8 +76,20 @@ public class AnimatorManager : MonoBehaviour
             snappedVerticalMovement = 2;
         }
 
-        animator.SetFloat(horizontalvalue, snappedHorizontalMovement, 0.1f, Time.deltaTime); 
+        animator.SetFloat(horizontalvalue, snappedHorizontalMovement, 0.1f, Time.deltaTime);
         animator.SetFloat(verticalValue, snappedVerticalMovement, 0.1f, Time.deltaTime);
 
     }
+
+    public void PlayerTargetAim(string targetAim, bool isInteracting)
+    {
+        animator.SetBool("isInteracting", isInteracting);
+        Debug.Log("Trying to crossfade to: " + targetAim);
+       
+
+        animator.CrossFade(targetAim, 0.2f); 
+    }    
+
+   
+
 }
